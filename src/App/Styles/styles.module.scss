@@ -1,0 +1,64 @@
+.mainScreenContainer {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 50px; 
+    padding-left: 5px; 
+    padding-right: 5px; 
+    flex-direction: row;
+}
+.mainScreenContainer .tagsContainer {
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 18px; 
+    border-color: #CFCFE4;
+}
+.mainScreenContainer .coursesContainer {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+}
+.coursesContainer .courseItemContainer {
+    height: 210px;
+    display: grid;
+    width: 30%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 8px rgba(74, 72, 72, 0.8);
+    border-radius: 18px;
+}
+.courseItemContainer .courseImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+}
+.courseItemContainer .courseNameText {
+    font-size: 18px;
+    font-weight: 800;
+    color: #39414B;
+    padding: 12px;
+}
+.courseItemContainer .courseNameContainer {
+    justify-content: center;
+}
+.tagsContainer .tagItemContainer {
+    width: 95%;
+    border-radius: 12px;
+    padding: 12px;
+}
+.tagItemContainer .tagName {
+    font-size: 18px;
+    align-items: center;
+    font-family: Nunito;
+    font-weight: 800;
+}
