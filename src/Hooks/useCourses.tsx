@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useRecoilState } from "recoil";
-import { ICourse, ITags } from "../Types/Types";
-import { coursesAtom, tagsAtom } from "../Services/RecoilStorage";
+import { ICourse, ITags } from "../types/Types";
+import { coursesAtom, tagsAtom } from "../state/RecoilState";
 
 export interface ICoursesProvider {
     readonly updateCourses: () => Promise<void>;
@@ -29,7 +29,7 @@ export default function useCourses() {
     }
 
     useEffect(() => {
-        const tagsArray: ITags = {choosedTag: 'Все темы', tags: ['Все темы']};
+        const tagsArray: ITags = {selectedTag: 'Все темы', tags: ['Все темы']};
         courses.map((course) => {
             course.tags.map((tag) => {
                 if(!tagsArray.tags.includes(tag)) {

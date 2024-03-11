@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
-import { ICourse } from "../../Types/Types";
-import classes from '../Styles/styles.module.scss'
+import { ICourse } from "../../types/Types";
+import classes from '../styles/styles.module.scss'
 
 interface ICourseItemProps {
     readonly course: ICourse;

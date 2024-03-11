@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import { RecoilRoot, } from 'recoil';
-import MainScreen from './App/Main/MainScreen';
+import MainScreen from './app/main/MainScreen';
 
 export default function AppRecoilWrapper() {
   return (

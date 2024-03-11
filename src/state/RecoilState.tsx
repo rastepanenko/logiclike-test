@@ -1,5 +1,5 @@
 import { atom } from "recoil";
-import { ICourse, ITags, } from "../Types/Types";
+import { ICourse, ITags, } from "../types/Types";
 
 export const coursesAtom = atom<ICourse[]>({
     key: 'coursesAtom',
@@ -9,6 +9,6 @@ export const coursesAtom = atom<ICourse[]>({
 
 export const tagsAtom = atom<ITags>({
     key: 'tagsAtom',
-    default: {choosedTag: '', tags: []},
+    default: {selectedTag: '', tags: []},
     dangerouslyAllowMutability: false,
 });

@@ -7,6 +7,6 @@ export interface ICourse {
 }
 
 export interface ITags {
-    readonly choosedTag: string;
+    readonly selectedTag: string;
     readonly tags: string[];
 }
